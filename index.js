@@ -1,3 +1,3 @@
 function main(){
-	console.log("O que te atrai, um dia te trai.")
+	console.log("Main carregado com exito.");
 }
