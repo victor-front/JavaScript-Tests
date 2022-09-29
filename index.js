@@ -1,7 +1,7 @@
 function main(){
 	let projetos = {
-		nomes: ["Luara,", "Eu", "TE", "Amo<3"],
-		caminhos: ["#", "#", "#", "#"],
+		nomes: ["Eixos"],
+		caminhos: ["projects/000_xy/index.html"]
 	}
 	
 	for(c=0;c<projetos.nomes.length;c++){

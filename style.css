@@ -64,8 +64,10 @@ main{
 	background-color: #222;
 	color: #ccc;
 	display: flex;
-	width: 250px;
-	height: 22em;
+	width: 100%;
+	max-width: 250px;
+	height: 100%;
+	min-height: 3em;
 	border-radius: 0px 10px 10px 0px;
 	padding: 10px;
 	flex-direction: column;
@@ -109,4 +111,41 @@ footer a{
 
 footer a:hover{
 	text-decoration: underline;
+}
+
+@media (max-width: 1250px){
+	main{
+		flex-direction: column;
+	}
+	
+	.introducao{
+		margin: auto;
+	}
+	
+	.projetos{
+		border-radius: 0px 0px 10px 10px;
+		display: flex;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2em;
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 950px){
+	.introducao{
+		border-left: none;
+		border-right: none;
+		border-radius: 0px;
+		max-width: 120vw;
+	}
+}
+
+@media (max-width: 550px){
+	.projetos{
+		width: 100%;
+		max-width: 120vw;
+		border-radius: 0px 0px 0px 0px;
+	}
 }
