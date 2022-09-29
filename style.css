@@ -14,37 +14,99 @@ header{
 	background-color: #222;
 	color: #BA9F3B;
 	padding: 1em;
-	height: 5em;
+	height: 6.5em;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	margin-bottom: 1.5em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
 }
 
 header h1{
 	font-size: 2.2em;
-	margin: auto;
+	margin-bottom: .1em;
 }
 
 main{
+	display: flex;
+	margin-top: 9em;
+}
+
+.introducao{
 	background-color: #ccc;
 	color: #222;
 	border: 4px solid #222;
 	padding: 20px;
 	max-width: 800px;
-	margin: auto;
 	border-radius: 5px;
 	font-size: 1.2em;
+	margin-left: 200px;
+	margin-bottom: 2em;
 }
 
-main h1, h2, p{
+.introducao h1, h2, p{
 	margin-bottom: 1em;
 }
 
-main a{
+.introducao a{
 	text-decoration: none;
 	color: #222;
 }
 
-main a:hover{
+.introducao a:hover{
+	text-decoration: underline;
+}
+
+.projetos{
+	background-color: #222;
+	color: #ccc;
+	display: flex;
+	width: 250px;
+	height: 22em;
+	border-radius: 0px 10px 10px 0px;
+	padding: 10px;
+	flex-direction: column;
+	margin-top: 4px;
+}
+
+.proj-caminho{
+	text-align: center;
+	font-size: 1.2em;
+	border: 2px solid #ccc;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #ccc;
+	font-weight: bold;
+}
+
+.proj-caminho:hover{
+	background-color: #ccc;
+	color: #222;
+	cursor: pointer;
+}
+
+footer{
+	background-color: #222;
+	color: #ccc;
+	display: flex;
+	min-height: 3em;
+	align-items: center;
+}
+
+footer p{
+	margin: auto;
+}
+
+footer a{
+	text-decoration: none;
+	color: #ccc;
+}
+
+footer a:hover{
 	text-decoration: underline;
 }
