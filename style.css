@@ -14,7 +14,7 @@ header{
 	background-color: #222;
 	color: #BA9F3B;
 	padding: 1em;
-	height: 6.5em;
+	min-height: 6.5em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
