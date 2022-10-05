@@ -1,5 +1,5 @@
 <h1>Olá, amig@!</h1>
-<h2>Importamte</h2>
+<h2>Importante</h2>
 <p>Bem, antes de mais nada, isso é um piloto. Uma demo de um projeto mais elaborado que eu pretendo fazer.</p>
 <p>A demo será desenvolvida aqui. Mas, se o projeto tomar uma boa forma, eu posso fazer em um repositório separado.</p>
 <h2>Anchor Park</h2>
