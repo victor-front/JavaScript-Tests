@@ -1,0 +1,25 @@
+{
+	"nome": "Victor Aguiar",
+	"idade": 17,
+	"favGames": 
+	[
+	"Pokemon Fire Red", 
+	"Mother", 
+	"Deltarune", 
+	"Undertale"
+	]
+	
+	"trabalhando": false, 
+	"hobbies": 
+	[
+	"Estudar Front-End", 
+	"Jogar Jogos antigos", 
+	"Assistir Youtube", 
+	"Ouvir músicas"
+	]
+	
+	"detalhes_profissao": {
+		"profissao": null,
+		"empresa": null
+	}
+}

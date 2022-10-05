@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	background-color: #444;
+}
+
+.obj-table{
+	background-color: #ccc;
+	border-radius: 5px;
+	border: 4px solid #222;
+	max-width: 600px;
+	display: flex;
+	margin: 2em auto;
+	padding: 10px;
+	font-size: .8em;
+}
