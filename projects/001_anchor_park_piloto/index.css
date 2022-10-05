@@ -1,0 +1,10 @@
+*{ /* Reset dos espaçamentos */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{ /* Formatação do corpo principal */
+	background-color: #444;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
