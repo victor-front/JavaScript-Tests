@@ -1,16 +1,45 @@
-MsgBox.make("Victor's Message", '(Asobios)', 'Next', 'etapas[0]()');
-etapas = [ //Ordem das mensagens (cada function é uma etapa).
+/* make.choice("Victor", 'escolha algo', ['XD', ':o', 'dundundont'], ['amor()', 'amordois()']); */
+
+make.choice("Escolha", "Você está rodeado por uma floresta, o que você faz?", ['Seguir em frente', 'Seguir a esquerda', 'Seguir a direita'], ['etapas.norte[0]()', 'etapas.oeste[0]()', 'etapas.leste[0]()']);
+
+etapas = {
+	norte: [
 	function(){
-	MsgBox.delete();
-	MsgBox.make("Victor's Message", 
-	'Oh, Perdão! Não sabia que você estava aqui.', 
-	'Next', 'etapas[1]()')},
+		message.remove();
+		make.choice("Escolha bfg", 
+		"Você está rodeado por uma floresta, o que você faz?", 
+		['Seguir em frente', 'Seguir a esquerda', 'Seguir a direita'], ['etapas.norte[1]()', 'etapas.oeste[1]()', 'etapas.leste[1]()']);
+	}, 
 	function(){
-	MsgBox.delete();
-	MsgBox.make("Victor's Message", 
-	'Bem, por enquanto não tem nada aqui, apenas esse mero teste da Box Message.', 'Next', 'etapas[2]()')},
+		message.remove();
+		make.message("Texto", 
+		"xd", 
+		"confirming", "etapas.norte[0]()");
+	}],
+	oeste: [
 	function(){
-	MsgBox.delete();
-	MsgBox.make("Victor's Message", 
-	'De todo modo, obrigado pela sua presença <3', 'Next')},
-]
+		message.remove();
+		make.message("Texto", 
+		"xd", 
+		"confirming", "etapas.norte[0]()");
+	}, 
+	function(){
+		message.remove();
+		make.message("Texto", 
+		"xd", 
+		"confirming", "etapas.norte[0]()");
+	}],
+	leste: [
+	function(){
+		message.remove();
+		make.message("Texto", 
+		"xd", 
+		"confirming", "etapas.norte[0]()");
+	},
+	function(){
+		message.remove();
+		make.message("Texto", 
+		"xd", 
+		"confirming", "etapas.norte[0]()");
+	}]
+}
