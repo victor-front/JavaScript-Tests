@@ -28,7 +28,7 @@ make = {
 	escolhas=null,
 	event=null
 	){
-		let choicebox = document.createElement('div');
+		let choicebox = document.createElement('div');//HTML configs
 		choicebox.setAttribute('id', 'message');
 		choicebox.classList.add('msgbox');
 		choicebox.innerHTML = `<div id="msgbox-header" class="msgbox-header">

@@ -8,6 +8,7 @@
 	border-top: none;
 	margin: 2em auto;
 	animation: surgir 400ms ease-in-out;
+	border-radius: 3px;
 }
 
 .msgbox-header{
@@ -36,7 +37,14 @@
 	padding: 10px;
 	font-weight: 444;
 	color: #222;
-	height: 80px;
+	min-height: 80px;
+}
+
+.msgbox-body img{
+	max-width: 100%;
+	margin: auto;
+	display: flex;
+	border-radius: 3px;
 }
 
 .button-container{
@@ -90,6 +98,7 @@
 	from{
 		opacity: 0;
 	}
+	
 	to{
 		opacity: 100%;
 	}
