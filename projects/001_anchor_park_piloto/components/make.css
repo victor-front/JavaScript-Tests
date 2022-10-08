@@ -3,7 +3,7 @@
 	color: #222;
 	display: flex;
 	flex-direction: column;
-	width: 380px;
+	max-width: 450px;
 	border: 4px solid #666;
 	border-top: none;
 	margin: 2em auto;
@@ -22,8 +22,9 @@
 .msgbox-header .title{
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.5em;
+	font-size: 2em;
 	display: flex;
+	font-weight: normal;
 }
 
 .msgbox-header .close{
@@ -34,10 +35,11 @@
 }
 
 .msgbox-body{
-	padding: 10px;
-	font-weight: 444;
-	color: #222;
+	margin: 15px;
+	font-weight: 222;
+	color: #444;
 	min-height: 80px;
+	font-size: 1.3em;
 }
 
 .msgbox-body img{
@@ -65,8 +67,8 @@
 	color: #ccc;
 	border: none;
 	border-radius: 5px;
-	font-size: 1em;
-	font-weight: bold;
+	font-size: 1.3em;
+	font-weight: 111;
 }
 
 .button:hover{
@@ -89,9 +91,23 @@
 	color: #ccc;
 	border: none;
 	border-radius: 5px;
-	font-size: 1em;
-	font-weight: bold;
+	font-size: 1.3em;
+	font-weight: 111;
 	text-align: center;
+}
+
+.input{
+	padding: 10px;
+	font-size: 1em;
+	display: flex;
+	background-color: #444;
+	color: #ccc;
+	margin: 10px auto;
+	margin-bottom: none;
+	text-align: center;
+	border: none;
+	border-radius: 3px;
+	font-weight: 111;
 }
 
 @keyframes surgir{

@@ -1,10 +1,17 @@
+@font-face{
+	src: url('data/VCR_OSD_MONO.ttf');
+	font-family: 'vcr';
+	font-weight: normal;
+	font-style: normal;
+}
+
 *{ /* Reset dos espaçamentos */
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'vcr', Arial, Helvetica, Verdana, sans-serif;
 }
 
 body{ /* Formatação do corpo principal */
 	background-color: #444;
-	font-family: Arial, Helvetica, Verdana, sans-serif;
 }

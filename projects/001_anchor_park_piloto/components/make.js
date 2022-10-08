@@ -47,4 +47,26 @@ make = {
 			buttonContainer.innerHTML += `<input id="button${c}" class="button-choice" type="button" value="${escolhas[c]}" onclick=${event[c]}>`;
 		}
 	},
+	
+	input: function question(
+		title="Sem título",
+		text="Sem texto",
+		button="Ok",
+		event=null
+		){
+		let inputbox = document.createElement('div');
+		inputbox.setAttribute('id', 'message');
+		inputbox.classList.add('msgbox');
+		inputbox.innerHTML = `<div id="msgbox-header" class="msgbox-header">
+				<h1 id="title" class="title">${title}</h1>
+				<img id="close" class="close" src="img/xicon.png">
+			</div>
+			<div id="msgbox-body" class="msgbox-body">
+				<img src="img/rosaria.png" width="120px" style="image-rendering: pixelated;"><input id="name" type="text" class="input" maxlength="10" placeholder="${text}">
+			</div>
+			<div id="button-container" class="button-container">
+				<input id="button" class="button" type="button" value=${button} onclick=${event}>
+			</div>`;
+		document.body.appendChild(inputbox);
+	}
 }
