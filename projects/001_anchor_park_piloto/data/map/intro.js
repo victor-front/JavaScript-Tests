@@ -18,10 +18,15 @@ let etapas = [
 	function(){
 		if(document.getElementById('name').value != false){
 			let nome = document.getElementById('name').value;
+			player.name = nome;
 			message.remove();
-			make.message(introtitle, `${nome}, é um prazer te conhecer!`, okay);
+			make.message(introtitle, `${player.name}, é um prazer te conhecer!`, okay, 'etapas[3]()');
 		}else{
 			etapas[1]();
 		}
+	},
+	
+	function(){
+		window.alert('mioiojj');
 	}
 ]
