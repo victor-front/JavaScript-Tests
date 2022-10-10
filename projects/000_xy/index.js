@@ -1,17 +1,33 @@
 let el = document.getElementById('player');
-console.log(el);
-let cords = el.getBoundingClientRect();
-console.log(cords);
-let plu = 0;
+const rect = el.getBoundingClientRect();
+console.log(rect);
 
-function mov(){
-	el.style.top = `${plu}px`;
-	el.style.left = `${plu}px`;
-	el.style.transform = `rotate(${plu}deg)`;
-	plu+=1;
-	setTimeout(()=>{
-		mov();
-	}, .5)
-}
-
-mov();
+vel = 8;
+document.addEventListener('keydown', function(teclado){
+	if(teclado.keyCode == 37){
+		function moveRight() {
+			let rightPosition = window.getComputedStyle(player).getPropertyValue('left')
+			if(player.style.left === "0px"){
+			return
+		}else {
+			let position = parseInt(rightPosition)
+			position += 4
+			player.style.left = '${position}px'
+		}
+	}
+	}
+	if(teclado.keyCode == 39){
+		function moveRight() {
+			let rightPosition = window.getComputedStyle(player).getPropertyValue('left')
+			if(player.style.left === "0px"){
+			return
+		}else {
+			let position = parseInt(rightPosition)
+			position -= 4
+			player.style.left = '${position}px'
+		}
+	}
+	}
+	console.log(teclado.keyCode);
+	console.log(document.getElementById('player').getBoundingClientRect());
+});
