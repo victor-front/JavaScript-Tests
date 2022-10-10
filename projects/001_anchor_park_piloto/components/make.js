@@ -68,5 +68,38 @@ make = {
 				<input id="button" class="button" type="button" value=${button} onclick=${event}>
 			</div>`;
 		document.body.appendChild(inputbox);
+	},
+	
+	battle: function battle(player, enemy){
+		let battleWindow = document.createElement('div');
+		battleWindow.setAttribute('id', 'battleWindow');
+		battleWindow.classList.add('battleWindow');
+		battleWindow.innerHTML = `
+		<div id="containerW" class="containerW">
+			<div id="msgContainer" class="msgContainer">
+			</div>
+			<div id="spriteContainer" class="spriteContainer">
+				<img id="enemySprite" class="enemySprite" src="${enemy.sprite}">
+			</div>
+			<div id="placContainer" class="placContainer">
+				<div id="nameContainer" class="nameContainer">
+					<h1>Nome</h1>
+					<h2>${player.name}</h2>
+				</div>
+				<div id="hpContainer" class="hpContainer">
+					<h1>HP</h1>
+					<h2>${player.hp}</h2>
+				</div>
+				<div id="ppContainer" class="ppContainer">
+					<h1>PP</h1>
+					<h2>${player.pp}</h2>
+				</div>
+				<div id="lvContainer" class="lvContainer">
+					<h1>LV</h1>
+					<h2>${player.lv}</h2>
+				</div>
+			</div>
+		</div>`;
+		document.body.appendChild(battleWindow);
 	}
 }

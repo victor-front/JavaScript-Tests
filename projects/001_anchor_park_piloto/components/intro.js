@@ -2,7 +2,9 @@
 let introtitle = 'Introdução';
 let okay = 'Próximo';
 
-make.message(introtitle, 'Olá, bem vind@ ao mundo dos pinheiros!', okay, 'etapas[0]()');
+make.battle(player, socks);
+
+/* make.message(introtitle, 'Olá, bem vind@ ao mundo dos pinheiros!', okay, 'etapas[0]()');
 
 let etapas = [
 	function(){
@@ -29,4 +31,4 @@ let etapas = [
 	function(){
 		window.alert('mioiojj');
 	}
-]
+] */
