@@ -2,7 +2,14 @@
 let introtitle = 'Introdução';
 let okay = 'Próximo';
 
-make.battle(player, socks);
+//make.battle(player, socks);
+
+make.message(['Luara é uma Deusa', 'Luara é uma linda'], 0,'testar');
+
+function testar(){
+	message.remove();
+	window.alert('foi');
+}
 
 /* make.message(introtitle, 'Olá, bem vind@ ao mundo dos pinheiros!', okay, 'etapas[0]()');
 
