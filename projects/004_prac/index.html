@@ -5,14 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE-edge">
 		<link rel="stylesheet" href="index.css">
+		<script defer src="index.js"></script>
 		<title>Teste</title>
 	</head>
 	<main>
 		<section id="principal" class="section">
-			<h1 class="form-title">Teste</h1>
+			<h1 class="form-title">Criar conta</h1>
 			<form id="form" class="form">
 				<div id="nickdiv" class="nickdiv">
-					<input type="text" name="nick" id="nick" class="nick" placeholder="My nick is...">
+					<input type="text" name="nick" id="nick" class="nick" maxlength="20" placeholder="My nick is...">
 				</div>
 				<div id="gendiv" class="gendiv">
 					<input type="radio" name="gen" id="magen" class="gen">
@@ -23,9 +24,9 @@
 					<label for="odgen">outro</label>
 				</div>
 				<div id="aboutdiv" class="aboutdiv">
-					<textarea maxlength="150" name="aboutme" id="aboutme" class="aboutme" placeholder="About me..."></textarea>
+					<textarea maxlength="150" ="" name="aboutme" id="aboutme" class="aboutme" placeholder="About me..."></textarea>
 				</div>
-				<input type="button" id="finished" class="finished" value="finished">
+				<input type="button" id="finished" class="finished" onclick="criar()" value="finished">
 			</form>
 		</section>
 	</main>
