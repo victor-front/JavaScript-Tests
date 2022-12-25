@@ -25,7 +25,13 @@ function criar(){
 			window.alert('Por favor, cheque seu gênero.');
 		}
 		function gerar(gender){
-			window.alert(`${gender} chamado ${nick.value} com a descrição de ${aboutme.value}`);
+			document.getElementById('principal').innerHTML = `
+				<h1 class="tunick">${nick.value}</h1>
+				<h2 class="gentex">Meu gênero</h2>
+				<p class="tugen">${gender}</p>
+				<h2 class="gentex">Sobre mim</h2>
+				<p class="tudesc">${about.value}</p>
+			`;
 		}
 	}
 }
