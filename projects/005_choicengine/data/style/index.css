@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html{
+	height: 100%;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: #222;
+	color: #ccc;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
