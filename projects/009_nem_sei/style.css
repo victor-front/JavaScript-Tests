@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: 100%;
+}
+
+body{
+	background-color: #363636;
+}
+
+.grades{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	background-color: #222;
+	border-radius: 10px;
+	max-width: 800px;
+	min-height: 800%;
+}
+
+.legrid{
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-template-rows: 200px 200px 200px;
+	gap: 10px;
+	padding: 10px;
+	max-width: 800px;
+}
+
+.caixa{
+	display: block;
+	border-radius: 10px;
+	background-color: #565656;
+}
