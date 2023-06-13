@@ -1,6 +1,6 @@
 function main(){
 	let projetos = {
-		nomes: ["Eixos", "Anchor Park Demo", "Teste del día", "Outro testekk", "Choicengine", "Kkkkk", "Vetor", "Nemsei"],
+		nomes: ["Eixos", "Anchor Park Demo", "Teste del día", "Outro testekk", "Choicengine", "Kkkkk", "Vetor", "Nemsei", "a"],
 		caminhos: [
 		"projects/000_xy/index.html", 
 		"projects/001_anchor_park_piloto/index.html",
@@ -9,7 +9,8 @@ function main(){
 		"projects/005_choicengine/index.html",
 		"projects/007_outrolol/index.html",
 		"projects/008_vetor/index.html",
-		"projects/009_nem_sei/index.html"
+		"projects/009_nem_sei/index.html",
+		"projects/010_neverbealone/index.html"
 		]
 	}
 	
