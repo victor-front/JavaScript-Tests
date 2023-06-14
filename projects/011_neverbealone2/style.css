@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
+}
+
+body{
+	background-color: #222;
+}
+
+.sec{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: #363636;
+	height: 500px;
+	width: 500px;
+	margin: 1em auto;
+}
+
+.block{
+	position: absolute;
+	right: calc(50% - 10%);
+	top: 0;
+	background-color: #868686;
+	height: 100px;
+	width: 100px;
+}
